@@ -35,7 +35,6 @@ float pembagian (int a,int b)
 int main() {
 
     int pilihan;
-
     do
     {
         cout << "Kalkulator Sederhana" << endl;
@@ -43,7 +42,7 @@ int main() {
         cout << "1. Penjumlahan" << endl;
         cout << "2. Pengurangan" << endl;
         cout << "3. Perkalian" << endl;
-        cout << "4. Pembagian" << endl;
+        cou1t << "4. Pembagian" << endl;
         cout << "5. Keluar" << endl;
         cout << "====================" << endl;
         cout << "Masukkan menu pilihan : "; 
@@ -53,30 +52,29 @@ int main() {
     {
         case 1:
             inputData();
-            cout << "Hasil Penjumlahan = " << penjumlahan (bilangan1, bilangan2) << endl;
+            cout << "Hasil Penjumlahan = " << penjumlahan(bilangan1, bilangan2) << endl;
             break; 
         case 2:
             inputData();
-            cout << "Hasil Pengurangan = " << pengurangan (bilangan1, bilangan2) << endl;
+            cout << "Hasil Pengurangan = " << pengurangan(bilangan1, bilangan2) << endl;
             break; 
         case 3:
             inputData();
-            cout << "Hasil Perkalian = " << Perkalian (bilangan1, bilangan2) << endl;
+            cout << "Hasil Perkalian = " << perkalian(bilangan1, bilangan2) << endl;
             break; 
         case 4:
             inputData();
-            cout << "Hasil Pembagian = " << Pembagian (bilangan1, bilangan2) << endl;
-            break; 
+            cout << "Hasil Pembagian = " << pembagian(bilangan1, bilangan2) << endl;
+            break;
+        case 5:
+            break;
+
         default:
             cout << "Pilihan tidak ada" << endl;
+            break;}
+    system("pause");
+    system("CLS");
 
-
-    }
-
-       
-
-
-    
-
+    }while (pilihan != 5);
 
 }
